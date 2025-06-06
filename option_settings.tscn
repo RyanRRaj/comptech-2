@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=3 uid="uid://piv6cobd323y"]
+
+[ext_resource type="Script" path="res://option_settings.gd" id="1_3nssf"]
+[ext_resource type="Texture2D" uid="uid://dgixgfijj0po8" path="res://Creepy Background.png" id="2_bunv6"]
+
+[sub_resource type="SystemFont" id="SystemFont_oqhxn"]
+font_names = PackedStringArray("Ayuthaya")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svi08"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqb3x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nehcx"]
+bg_color = Color(0.838897, 0.838897, 0.838897, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fdm2"]
+bg_color = Color(0.583047, 0.583047, 0.583047, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spwhj"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+shadow_color = Color(0.685146, 0.685146, 0.685146, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="Option_settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3nssf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -36.0
+offset_right = 64.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bunv6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -101.0
+offset_right = 169.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 38
+theme_override_fonts/font = SubResource("SystemFont_oqhxn")
+theme_override_font_sizes/font_size = 48
+button_pressed = true
+action_mode = 0
+text = "Sound  "
+
+[node name="CheckButton2" type="CheckButton" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 38
+theme_override_fonts/font = SubResource("SystemFont_oqhxn")
+theme_override_font_sizes/font_size = 48
+button_pressed = true
+action_mode = 0
+button_mask = 5
+text = "Music  "
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_svi08")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_oqb3x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nehcx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4fdm2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_spwhj")
+text = "Return Home"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_return_home_pressed"]

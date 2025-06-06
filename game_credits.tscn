@@ -1,0 +1,119 @@
+[gd_scene load_steps=9 format=3 uid="uid://d3afxpkd75g3c"]
+
+[ext_resource type="Script" path="res://game_credits.gd" id="1_4wrcw"]
+[ext_resource type="Texture2D" uid="uid://cvuoc0sh6d2sr" path="res://Credits Background.webp" id="1_j48tu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c7mji"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxu87"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlaw2"]
+bg_color = Color(0.838897, 0.838897, 0.838897, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ptcwb"]
+bg_color = Color(0.583047, 0.583047, 0.583047, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkk5p"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+shadow_color = Color(0.685146, 0.685146, 0.685146, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="SystemFont" id="SystemFont_ieb2d"]
+font_names = PackedStringArray("Impact")
+
+[node name="Game_Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4wrcw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_j48tu")
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -128.5
+offset_top = -78.0
+offset_right = 128.5
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c7mji")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_mxu87")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wlaw2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ptcwb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vkk5p")
+text = "Return Home"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = -131.0
+offset_right = 196.0
+offset_bottom = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 32
+theme_override_constants/shadow_outline_size = 32
+theme_override_fonts/font = SubResource("SystemFont_ieb2d")
+theme_override_font_sizes/font_size = 32
+text = "Creative Director - Ryan R
+Production Director - Ryan R
+Technical Director - Ryan R
+Level Design Director - Ryan R
+Animation Director - Ryan R"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.0
+offset_top = -255.0
+offset_right = 205.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 8
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 48
+theme_override_fonts/font = SubResource("SystemFont_ieb2d")
+theme_override_font_sizes/font_size = 52
+text = "Methodical Studios"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_return_home_pressed"]

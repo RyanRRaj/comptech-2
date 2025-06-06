@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://jbuswgk4r5ty"]
+
+[ext_resource type="Texture2D" uid="uid://cnxdws7hrixbd" path="res://Game_over_screen.jpg" id="1_j0wum"]
+[ext_resource type="Script" path="res://game_over.gd" id="1_m7wkj"]
+
+[sub_resource type="SystemFont" id="SystemFont_awjya"]
+font_names = PackedStringArray("Impact")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a34rd"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Game_Over" type="Node2D"]
+script = ExtResource("1_m7wkj")
+
+[node name="Game_Over_Screen" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 1165.0
+offset_bottom = 656.0
+texture = ExtResource("1_j0wum")
+
+[node name="play_again" type="Button" parent="Game_Over_Screen"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -103.5
+offset_top = -234.0
+offset_right = 98.5
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_awjya")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_a34rd")
+text = "PLAY AGAIN"
+
+[node name="main_menu" type="Button" parent="Game_Over_Screen"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -136.0
+offset_right = 96.0
+offset_bottom = -84.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_awjya")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_a34rd")
+text = "MAIN MENU"
+
+[connection signal="pressed" from="Game_Over_Screen/play_again" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Game_Over_Screen/main_menu" to="." method="_on_main_menu_pressed"]

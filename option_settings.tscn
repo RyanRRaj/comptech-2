@@ -1,10 +1,22 @@
-[gd_scene load_steps=9 format=3 uid="uid://piv6cobd323y"]
+[gd_scene load_steps=14 format=3 uid="uid://piv6cobd323y"]
 
 [ext_resource type="Script" path="res://option_settings.gd" id="1_3nssf"]
 [ext_resource type="Texture2D" uid="uid://dgixgfijj0po8" path="res://Creepy Background.png" id="2_bunv6"]
 
 [sub_resource type="SystemFont" id="SystemFont_oqhxn"]
 font_names = PackedStringArray("Ayuthaya")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lkito"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s6juw"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svi08"]
 
@@ -26,6 +38,18 @@ shadow_color = Color(0.685146, 0.685146, 0.685146, 0.6)
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_8gldw"]
+color = Color(1, 1, 1, 1)
+thickness = 4
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_mrqc7"]
+color = Color(0.147951, 0.362797, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_c2d66"]
+color = Color(0.200427, 0.518685, 1, 1)
+thickness = 6
+
 [node name="Option_settings" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -40,51 +64,68 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -36.0
-offset_right = 64.0
-offset_bottom = 36.0
+offset_left = -62.0
+offset_top = -34.0
+offset_right = 66.0
+offset_bottom = 38.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_bunv6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -124.0
-offset_top = -101.0
-offset_right = 169.0
-offset_bottom = 108.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Buttons" type="Node" parent="."]
 
-[node name="CheckButton" type="CheckButton" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+[node name="CheckButton" type="Button" parent="Buttons"]
+offset_left = 452.0
+offset_top = 162.0
+offset_right = 745.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 38
+theme_override_fonts/font = SubResource("SystemFont_oqhxn")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_lkito")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_s6juw")
+action_mode = 0
+text = " Sound  "
+alignment = 0
+icon_alignment = 1
+vertical_icon_alignment = 2
+
+[node name="CheckButton2" type="Button" parent="Buttons"]
+offset_left = 452.0
+offset_top = 260.0
+offset_right = 745.0
+offset_bottom = 336.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 38
 theme_override_fonts/font = SubResource("SystemFont_oqhxn")
 theme_override_font_sizes/font_size = 48
-button_pressed = true
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_lkito")
 action_mode = 0
-text = "Sound  "
+text = "		"
+text_overrun_behavior = 2
+icon_alignment = 1
 
-[node name="CheckButton2" type="CheckButton" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+[node name="CheckButton3" type="Button" parent="Buttons"]
+offset_left = 452.0
+offset_top = 356.0
+offset_right = 745.0
+offset_bottom = 432.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 38
 theme_override_fonts/font = SubResource("SystemFont_oqhxn")
 theme_override_font_sizes/font_size = 48
-button_pressed = true
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_lkito")
 action_mode = 0
-button_mask = 5
-text = "Music  "
+text = "		"
+text_overrun_behavior = 2
+icon_alignment = 1
 
-[node name="Button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
+[node name="Button" type="Button" parent="Buttons"]
+offset_left = 436.0
+offset_top = 477.0
+offset_right = 729.0
+offset_bottom = 528.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
@@ -98,4 +139,14 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_4fdm2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_spwhj")
 text = "Return Home"
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_return_home_pressed"]
+[node name="HSlider" type="HSlider" parent="Buttons"]
+offset_left = 571.0
+offset_top = 179.0
+offset_right = 734.0
+offset_bottom = 225.0
+theme_override_styles/slider = SubResource("StyleBoxLine_8gldw")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_mrqc7")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_c2d66")
+value = 50.0
+
+[connection signal="pressed" from="Buttons/Button" to="." method="_on_return_home_pressed"]

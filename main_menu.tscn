@@ -1,11 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cosjsedpxtcv1"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_i1uih"]
-[ext_resource type="Texture2D" uid="uid://dgixgfijj0po8" path="res://Creepy Background.png" id="2_8ji6b"]
+[ext_resource type="Texture2D" uid="uid://dnavwro7cg88j" path="res://swamp_background_levels.jpg" id="2_6mswe"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1b4mb"]
-texture = ExtResource("2_8ji6b")
-modulate_color = Color(0.542982, 0.542982, 0.542982, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y8aai"]
+texture = ExtResource("2_6mswe")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tejhr"]
 
@@ -47,7 +46,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_1b4mb")
+theme_override_styles/panel = SubResource("StyleBoxTexture_y8aai")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -132,10 +131,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -117.0
-offset_top = -243.0
-offset_right = 107.0
-offset_bottom = -140.0
+offset_left = -174.0
+offset_top = -313.0
+offset_right = 159.0
+offset_bottom = -210.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)

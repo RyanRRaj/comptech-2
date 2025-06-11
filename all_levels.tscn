@@ -129,4 +129,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ehg1b")
 text = "Return Home"
 
 [connection signal="pressed" from="TextureRect/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="TextureRect/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="TextureRect/return_home" to="." method="_on_return_home_pressed"]

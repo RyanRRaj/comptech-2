@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct11wufydiwef"]
+
+[ext_resource type="Script" path="res://audio_controller.gd" id="1_6m8hp"]
+[ext_resource type="AudioStream" uid="uid://dlaxjsmguxbtg" path="res://2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3" id="2_s8ofm"]
+
+[node name="AudioController" type="Node"]
+script = ExtResource("1_6m8hp")
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_s8ofm")

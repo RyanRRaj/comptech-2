@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -500.0
+const JUMP_VELOCITY = -450.0
 
 #To make sure that the character does not triple jump
 var doubleJumped := false
@@ -31,6 +31,7 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY
 		if !is_on_floor():
 			doubleJumped = true
+			sprite_2d.animation = "doubleJumped"
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("left", "right")

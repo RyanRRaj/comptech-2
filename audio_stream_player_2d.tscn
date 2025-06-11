@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://hunfl4gfbwlb"]
+
+[ext_resource type="AudioStream" uid="uid://dlaxjsmguxbtg" path="res://2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3" id="1_mtiiq"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer"]
+stream = ExtResource("1_mtiiq")
+autoplay = true

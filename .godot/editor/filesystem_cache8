@@ -1,0 +1,80 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1749615267
+2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3::AudioStreamMP3::7932752858334632776::1749543464::1749543464::1::::<><>::
+all_levels.gd::GDScript::-1::1749456497::0::1::::<>Node2D<>::
+all_levels.tscn::PackedScene::8237976804661641592::1749615174::0::1::::<><>::uid://vo1xaitnn7oy::::res://Green.png<>res://all_levels.gd
+Apple.png::CompressedTexture2D::7093930336014597006::1748748684::1749205003::1::::<><>::
+audio_controller.gd::GDScript::-1::1749602966::0::1::::<>Node<>::
+audio_controller.tscn::PackedScene::6161722206678031509::1749615174::0::1::::<><>::res://audio_controller.gd<>uid://dlaxjsmguxbtg::::res://2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3
+audio_stream_player_2d.tscn::PackedScene::533408333258449703::1749551940::0::1::::<><>::uid://dlaxjsmguxbtg::::res://2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.mp3
+bat_enemy.gd::GDScript::-1::1749526139::0::1::::<>CharacterBody2D<>::
+bat_enemy.tscn::PackedScene::209629701658659950::1749615174::0::1::::<><>::res://scenes_2/idle_enemy.gd<>uid://bobe1a6o4kup2::::res://scenes/Flying (46x30).png<>uid://cyu3t4f3g5kxu::::res://Hit (84x38).png<>uid://cbkvwdam8vcp7::::res://Run (84x38).png<>uid://dpmubi7qjynhn::::res://Chameleon/Idle (84x38).png
+Blue.png::CompressedTexture2D::5382745393213154631::1747965791::1749174866::1::::<><>::
+collision_shape_2d.gd::GDScript::-1::1748691127::0::1::::<>CollisionShape2D<>::
+Credits Background.webp::CompressedTexture2D::6288949589602475209::1743590914::1749174866::1::::<><>::
+Creepy Background.png::CompressedTexture2D::7598317615934166065::1748658343::1749174866::1::::<><>::
+Double Jump (32x32).png::CompressedTexture2D::3195094861951379792::1749520077::1749520078::1::::<><>::
+End (Idle).png::CompressedTexture2D::4602524979913856404::1748673704::1749174866::1::::<><>::
+End (Pressed) (64x64).png::CompressedTexture2D::876337758664636198::1748673714::1749174866::1::::<><>::
+export_presets.cfg::TextFile::-1::1743676085::0::1::::<><>::
+fall_area.gd::GDScript::-1::1748778584::0::1::::<>Area2D<>::
+game_credits.gd::GDScript::-1::1747972438::0::1::::<>Control<>::
+game_credits.tscn::PackedScene::9124895134646407202::1749615174::0::1::::<><>::res://game_credits.gd<>uid://cvuoc0sh6d2sr::::res://Credits Background.webp
+game_level.gd::GDScript::-1::1747972208::0::1::::<>Node<>::
+game_manager.gd::GDScript::-1::1749514839::0::1::::<>Node<>::
+game_over.gd::GDScript::-1::1749519846::0::1::::<>Node2D<>::
+game_over.tscn::PackedScene::635011619918309806::1749615174::0::1::::<><>::uid://cnxdws7hrixbd::::res://Game_over_screen.jpg<>res://game_over.gd
+Game_over_screen.jpg::CompressedTexture2D::5732999456663355697::1748671834::1749174866::1::::<><>::
+Global.gd::GDScript::-1::1749431404::0::1::::<>Node<>::
+Gray.png::CompressedTexture2D::5874843345337182812::1749457077::1749457083::1::::<><>::
+Green.png::CompressedTexture2D::1504486733266886796::1748689770::1749174866::1::::<><>::
+Heart.png.png::CompressedTexture2D::5121521925593889447::1748781020::1749174866::1::::<><>::
+Hit (84x38).png::CompressedTexture2D::6500396707844406490::1748746777::1749174866::1::::<><>::
+icon.svg::CompressedTexture2D::8957403498940833822::1743466716::1749174866::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::2162145249625577705::1748005275::1749174866::1::::<><>::
+Idle (84x38).png::CompressedTexture2D::7943575461512836634::1748746768::1749174866::1::::<><>::
+Idle.png::CompressedTexture2D::5057495957252690062::1748670810::1749174866::1::::<><>::
+Item 3-1.png.png::CompressedTexture2D::8596668640410713399::1748780979::1749174866::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::7864335739381900978::1748005531::1749174866::1::::<><>::
+Kiwi.png::CompressedTexture2D::2819881086199933329::1749459175::1749459176::1::::<><>::
+main_menu.gd::GDScript::-1::1749602995::0::1::::<>Control<>::
+main_menu.tscn::PackedScene::5793222790557748500::1749615173::0::1::::<><>::res://main_menu.gd<>uid://dnavwro7cg88j::::res://swamp_background_levels.jpg
+New game background.png::CompressedTexture2D::7583680101104373673::1749176998::1749176999::1::::<><>::
+OIP (1).jpeg::CompressedTexture2D::6210903247001483167::1748688636::1749174866::1::::<><>::
+option_settings.gd::GDScript::-1::1748403475::0::1::::<>Control<>::
+option_settings.tscn::PackedScene::1070678219786650732::1749615174::0::1::::<><>::res://option_settings.gd<>uid://dgixgfijj0po8::::res://Creepy Background.png
+player_death_effect.gd::GDScript::-1::1749343839::0::1::::<>Node2D<>::
+player_death_effect.tscn::PackedScene::8315100912578249402::1749342825::0::1::::<><>::
+return_home.gd::GDScript::-1::1748748276::0::1::::<>Button<>::
+Run (32x32).png::CompressedTexture2D::5254085966723937041::1748005479::1749174866::1::::<><>::
+Run (84x38).png::CompressedTexture2D::4864988491039038558::1748746772::1749174866::1::::<><>::
+Screenshot 2025-05-08 at 21.19.35.png::CompressedTexture2D::4117094661208491354::1746703188::1749174866::1::::<><>::
+Screenshot 2025-06-06 at 20.17.54.png::CompressedTexture2D::2819759690104764854::1749205097::1749205097::1::::<><>::
+speed_run.gd::GDScript::-1::1749449149::0::1::::<>CanvasLayer<>::
+speed_run.tscn::PackedScene::6328633143445599028::1749615174::0::1::::<><>::res://speed_run.gd
+swamp_background_levels.jpg::CompressedTexture2D::8073032278668823231::1748688945::1749174866::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::3746612278887897156::1747966560::1749174866::1::::<><>::
+trophy_end.gd::GDScript::-1::1748852379::0::1::::<>Area2D<>::
+::res://Chameleon/::1749174866
+Attack (84x38).png::CompressedTexture2D::8051090399130476371::1748746985::1749174866::1::::<><>::
+Hit (84x38).png::CompressedTexture2D::2010960218653903888::1748746985::1749174866::1::::<><>::
+Idle (84x38).png::CompressedTexture2D::8238083834708235263::1748746985::1749174866::1::::<><>::
+Run (84x38).png::CompressedTexture2D::302935973477939650::1748746985::1749174866::1::::<><>::
+::res://scenes/::1749615174
+collectable.gd::GDScript::-1::1748779100::0::1::::<>Area2D<>::
+collectable.tscn::PackedScene::145032396212292122::1749615173::0::1::::<><>::res://scenes/collectable.gd<>uid://bgf8badp23myb::::res://Kiwi.png
+Flying (46x30).png::CompressedTexture2D::3371418219556410633::1749460310::1749460310::1::::<><>::
+level_1 .tscn::PackedScene::8178101112567190728::1749615173::0::1::::<><>::res://game_manager.gd<>uid://cixpba54ycfpf::::res://Blue.png<>uid://btm5flkxp0gau::::res://Terrain (16x16).png<>uid://cwfvwsyj0lmdw::::res://speed_run.tscn<>uid://cee4e6qejpi24::::res://scenes/main_character.tscn<>uid://cciwrybb1oc5::::res://scenes/collectable.tscn<>res://fall_area.gd<>uid://c4a3mrd5l5cj7::::res://scenes_2/trophy_body_2d_2.tscn<>res://trophy_end.gd<>uid://cl6pf2esm8544::::res://scenes_2/idle_enemy.tscn<>uid://ceb5hp0qq7by1::::res://Idle.png<>uid://ce75yn3n5cy60::::res://Heart.png.png
+level_1.gd::GDScript::-1::1743662263::0::1::::<>Control<>::
+level_2 .tscn::PackedScene::1617368830464628352::1749615174::0::1::::<><>::res://game_manager.gd<>uid://cpx22ugbl1gbc::::res://Gray.png<>uid://btm5flkxp0gau::::res://Terrain (16x16).png<>uid://cwfvwsyj0lmdw::::res://speed_run.tscn<>uid://cee4e6qejpi24::::res://scenes/main_character.tscn<>res://fall_area.gd<>uid://cciwrybb1oc5::::res://scenes/collectable.tscn<>uid://c4a3mrd5l5cj7::::res://scenes_2/trophy_body_2d_2.tscn<>res://trophy_end.gd<>uid://c8stntitxrac::::res://bat_enemy.tscn<>uid://ceb5hp0qq7by1::::res://Idle.png<>uid://ce75yn3n5cy60::::res://Heart.png.png
+main_character.gd::GDScript::-1::1749522565::0::1::::<>CharacterBody2D<>::
+main_character.tscn::PackedScene::5063623842055511387::1749615173::0::1::::<><>::res://scenes/main_character.gd<>uid://dkbspwq0rq8hq::::res://Jump (32x32).png<>uid://nlynxaog3oej::::res://scenes_2/Hit (32x32).png<>uid://52mhmeej7mub::::res://Idle (32x32).png<>uid://blry0l41ha4g7::::res://Double Jump (32x32).png<>uid://cg4ea7v7vqp7f::::res://Run (32x32).png
+::res://scenes_2/::1749615174
+Hit (32x32).png::CompressedTexture2D::936644754418521417::1749342652::1749342653::1::::<><>::
+idle_enemy.gd::GDScript::-1::1749614559::0::1::::<>CharacterBody2D<>::
+idle_enemy.tscn::PackedScene::5609835466786310775::1749615174::0::1::::<><>::res://scenes_2/idle_enemy.gd<>uid://cyu3t4f3g5kxu::::res://Hit (84x38).png<>uid://cbkvwdam8vcp7::::res://Run (84x38).png
+Off.png::CompressedTexture2D::7852838355257768690::1749351661::1749351662::1::::<><>::
+On (32x10).png::CompressedTexture2D::7472771275717179125::1749351669::1749351669::1::::<><>::
+Screenshot 2025-05-30 at 11.41.28.png::CompressedTexture2D::7856684951625554356::1749174324::1749174866::1::::<><>::
+trophy_body_2d_2.gd::GDScript::-1::1748694433::0::1::::<>CharacterBody2D<>::
+trophy_body_2d_2.tscn::PackedScene::6810040237123770874::1749615174::0::1::::<><>::res://scenes_2/trophy_body_2d_2.gd<>uid://mqrfjairj1sc::::res://End (Pressed) (64x64).png

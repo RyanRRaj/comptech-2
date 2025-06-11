@@ -7,14 +7,14 @@ func _ready() -> void:
 
 
 func _on_button_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_1 .tscn")
 
 
 func _on_button_3_pressed() -> void:
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://scenes/level_2 .tscn")
 	
 func _on_button_4_pressed() -> void:
-	get_tree().change_scene_to_file("res://main.tscn")
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 	
 func _on_return_home_pressed() -> void:
 	get_tree().change_scene_to_file("res://main_menu.tscn")

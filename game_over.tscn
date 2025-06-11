@@ -39,7 +39,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("SystemFont_awjya")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_a34rd")
-text = "PLAY AGAIN"
+text = "LEVELS"
 
 [node name="main_menu" type="Button" parent="Game_Over_Screen"]
 layout_mode = 1

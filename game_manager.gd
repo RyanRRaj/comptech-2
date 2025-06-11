@@ -22,4 +22,4 @@ func decrease_health():
 func add_points():
 	points += 1
 	print(points)
-	points_label.text = "Points: " + str(points)
+	points_label.text = "Kiwi's:"  + str(points)

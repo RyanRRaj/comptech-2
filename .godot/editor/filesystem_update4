@@ -1,0 +1,15 @@
+res://bat_enemy.tscn
+res://audio_controller.gd
+res://main_menu.tscn
+res://scenes/collectable.tscn
+res://scenes/main_character.tscn
+res://scenes/level_1 .tscn
+res://scenes/level_2 .tscn
+res://option_settings.tscn
+res://all_levels.tscn
+res://scenes_2/idle_enemy.tscn
+res://game_credits.tscn
+res://game_over.tscn
+res://speed_run.tscn
+res://scenes_2/trophy_body_2d_2.tscn
+res://audio_controller.tscn
